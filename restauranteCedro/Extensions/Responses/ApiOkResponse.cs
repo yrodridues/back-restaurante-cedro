@@ -1,4 +1,4 @@
-namespace back_base_postgre.Extensions.Responses
+namespace restauranteCedro.Extensions.Responses
 {
     public class ApiOkResponse : ApiResponse
     {

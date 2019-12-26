@@ -18,7 +18,7 @@ namespace backbasepostgre.Migrations
                 .HasAnnotation("ProductVersion", "2.2.4-servicing-10062")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
-            modelBuilder.Entity("back_base_postgre.DAL.Models.Teste", b =>
+            modelBuilder.Entity("restauranteCedro.DAL.Models.Teste", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();

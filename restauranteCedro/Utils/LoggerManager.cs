@@ -1,6 +1,6 @@
 using NLog;
 
-namespace back_base_postgre.Utils
+namespace restauranteCedro.Utils
 {
     public class LoggerManager : ILoggerManager
     {

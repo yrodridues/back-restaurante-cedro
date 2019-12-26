@@ -1,13 +1,13 @@
 using System;
 using System.Net;
 using System.Threading.Tasks;
-using back_base_postgre.BLL.Exceptions;
-using back_base_postgre.Extensions.Responses;
-using back_base_postgre.Utils;
+using restauranteCedro.BLL.Exceptions;
+using restauranteCedro.Extensions.Responses;
+using restauranteCedro.Utils;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 
-namespace back_base_postgre.Extensions
+namespace restauranteCedro.Extensions
 {
     public class ExceptionMiddleware
     {

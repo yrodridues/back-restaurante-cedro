@@ -1,8 +1,8 @@
-using back_base_postgre.Extensions.Responses;
+using restauranteCedro.Extensions.Responses;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace back_base_postgre.Extensions.Filters
+namespace restauranteCedro.Extensions.Filters
 {
     public class ApiValidationFilterAttribute : ActionFilterAttribute
     {

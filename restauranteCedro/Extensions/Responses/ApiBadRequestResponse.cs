@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace back_base_postgre.Extensions.Responses
+namespace restauranteCedro.Extensions.Responses
 {
     public class ApiBadRequestResponse : ApiResponse
     {

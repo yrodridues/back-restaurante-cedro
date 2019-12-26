@@ -1,4 +1,4 @@
-namespace back_base_postgre.Utils
+namespace restauranteCedro.Utils
 {
     public interface ILoggerManager
     {

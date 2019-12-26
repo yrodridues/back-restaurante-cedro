@@ -133,7 +133,7 @@
 2019-07-02 11:16:01.1620 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
 2019-07-02 11:16:01.1620 Trace File Target[logfile] has 2 layouts
 2019-07-02 11:16:01.1620 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
-2019-07-02 11:16:42.1582 Debug Targets for back_base_postgre.Utils.LoggerManager by level:
+2019-07-02 11:16:42.1582 Debug Targets for restauranteCedro.Utils.LoggerManager by level:
 2019-07-02 11:16:42.1582 Debug Trace =>
 2019-07-02 11:16:42.1582 Debug Debug => logfile
 2019-07-02 11:16:42.1582 Debug Info => logfile
@@ -683,7 +683,7 @@
 2019-07-02 11:31:42.9700 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
 2019-07-02 11:31:42.9700 Trace File Target[logfile] has 2 layouts
 2019-07-02 11:31:42.9700 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
-2019-07-02 11:32:17.8110 Debug Targets for back_base_postgre.Utils.LoggerManager by level:
+2019-07-02 11:32:17.8110 Debug Targets for restauranteCedro.Utils.LoggerManager by level:
 2019-07-02 11:32:17.8110 Debug Trace =>
 2019-07-02 11:32:17.8110 Debug Debug => logfile
 2019-07-02 11:32:17.8110 Debug Info => logfile
@@ -828,7 +828,7 @@
 2019-07-02 11:33:39.5979 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
 2019-07-02 11:33:39.5979 Trace File Target[logfile] has 2 layouts
 2019-07-02 11:33:39.6024 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
-2019-07-02 11:34:30.4097 Debug Targets for back_base_postgre.Utils.LoggerManager by level:
+2019-07-02 11:34:30.4097 Debug Targets for restauranteCedro.Utils.LoggerManager by level:
 2019-07-02 11:34:30.4097 Debug Trace =>
 2019-07-02 11:34:30.4099 Debug Debug => logfile
 2019-07-02 11:34:30.4099 Debug Info => logfile
@@ -840,7 +840,7 @@
 2019-07-02 11:34:30.4426 Trace Opening /home/cpd/PREFEITURA/EXEMPLOS/back-base-postgre/Utils/logs/2019-07-02_logfile.txt with allowFileSharedWriting=False
 2019-07-02 11:34:58.1041 Info AppDomain Shutting down. Logger closing...
 2019-07-02 11:34:58.1092 Debug Stopping file watching for path '/home/cpd/PREFEITURA/EXEMPLOS/back-base-postgre' filter 'nlog.config'
-2019-07-02 11:34:58.1120 Debug Targets not configured for logger: back_base_postgre.Utils.LoggerManager
+2019-07-02 11:34:58.1120 Debug Targets not configured for logger: restauranteCedro.Utils.LoggerManager
 2019-07-02 11:34:58.1120 Debug Closing logging configuration...
 2019-07-02 11:34:58.1120 Trace Closing File Target[logfile]
 2019-07-02 11:34:58.1141 Debug Closing target 'File Target[logfile]'.
@@ -996,7 +996,7 @@
 2019-07-02 11:35:01.9460 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
 2019-07-02 11:35:01.9460 Trace File Target[logfile] has 2 layouts
 2019-07-02 11:35:01.9504 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
-2019-07-02 11:35:19.3323 Debug Targets for back_base_postgre.Utils.LoggerManager by level:
+2019-07-02 11:35:19.3323 Debug Targets for restauranteCedro.Utils.LoggerManager by level:
 2019-07-02 11:35:19.3323 Debug Trace =>
 2019-07-02 11:35:19.3323 Debug Debug => logfile
 2019-07-02 11:35:19.3323 Debug Info => logfile
@@ -1008,7 +1008,7 @@
 2019-07-02 11:35:19.3743 Trace Opening /home/cpd/PREFEITURA/EXEMPLOS/back-base-postgre/Utils/logs/2019-07-02_logfile.txt with allowFileSharedWriting=False
 2019-07-02 11:36:12.6371 Info AppDomain Shutting down. Logger closing...
 2019-07-02 11:36:12.6401 Debug Stopping file watching for path '/home/cpd/PREFEITURA/EXEMPLOS/back-base-postgre' filter 'nlog.config'
-2019-07-02 11:36:12.6430 Debug Targets not configured for logger: back_base_postgre.Utils.LoggerManager
+2019-07-02 11:36:12.6430 Debug Targets not configured for logger: restauranteCedro.Utils.LoggerManager
 2019-07-02 11:36:12.6430 Debug Closing logging configuration...
 2019-07-02 11:36:12.6430 Trace Closing File Target[logfile]
 2019-07-02 11:36:12.6430 Debug Closing target 'File Target[logfile]'.
@@ -1299,7 +1299,7 @@
 2019-07-02 11:42:06.1080 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
 2019-07-02 11:42:06.1080 Trace File Target[logfile] has 2 layouts
 2019-07-02 11:42:06.1080 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
-2019-07-02 11:42:24.8728 Debug Targets for back_base_postgre.Utils.LoggerManager by level:
+2019-07-02 11:42:24.8728 Debug Targets for restauranteCedro.Utils.LoggerManager by level:
 2019-07-02 11:42:24.8728 Debug Trace =>
 2019-07-02 11:42:24.8740 Debug Debug => logfile
 2019-07-02 11:42:24.8740 Debug Info => logfile
@@ -1311,7 +1311,7 @@
 2019-07-02 11:42:24.9086 Trace Opening /home/cpd/PREFEITURA/EXEMPLOS/back-base-postgre/Utils/logs/2019-07-02_logfile.txt with allowFileSharedWriting=False
 2019-07-02 11:42:33.5059 Info AppDomain Shutting down. Logger closing...
 2019-07-02 11:42:33.5089 Debug Stopping file watching for path '/home/cpd/PREFEITURA/EXEMPLOS/back-base-postgre' filter 'nlog.config'
-2019-07-02 11:42:33.5111 Debug Targets not configured for logger: back_base_postgre.Utils.LoggerManager
+2019-07-02 11:42:33.5111 Debug Targets not configured for logger: restauranteCedro.Utils.LoggerManager
 2019-07-02 11:42:33.5111 Debug Closing logging configuration...
 2019-07-02 11:42:33.5111 Trace Closing File Target[logfile]
 2019-07-02 11:42:33.5111 Debug Closing target 'File Target[logfile]'.

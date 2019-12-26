@@ -2,7 +2,7 @@
 using restauranteCedro.DAL.DTO;
 using restauranteCedro.DAL.Models;
 
-namespace back_base_postgre
+namespace restauranteCedro
 {
     public class AutoMapperProfileConfiguration : Profile
     {

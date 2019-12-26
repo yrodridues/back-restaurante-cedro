@@ -1,10 +1,10 @@
 using System.Net;
-using back_base_postgre.Utils;
+using restauranteCedro.Utils;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 
-namespace back_base_postgre.Extensions
+namespace restauranteCedro.Extensions
 {
     public static class ExceptionMiddlewareExtensions
     {
