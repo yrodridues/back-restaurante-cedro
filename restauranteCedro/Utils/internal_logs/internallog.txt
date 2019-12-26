@@ -2761,3 +2761,171 @@
 2019-12-26 19:06:49.9567 Trace Closing Layout Renderer: ${message}
 2019-12-26 19:06:49.9567 Debug Finished closing logging configuration.
 2019-12-26 19:06:49.9567 Info Logger has been shut down.
+2019-12-26 21:06:56.2214 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2019-12-26 21:06:56.4206 Debug Found assembly location directory: '/home/yuri-sama/.nuget/packages/nlog/4.6.4/lib/netstandard2.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2019-12-26 21:06:56.4241 Debug Search for auto loading files in location: /home/yuri-sama/.nuget/packages/nlog/4.6.4/lib/netstandard2.0
+2019-12-26 21:06:56.4265 Debug Found assembly location directory: '/home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro/bin/Debug/netcoreapp2.2' (restauranteCedro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2019-12-26 21:06:56.4265 Debug Search for auto loading files in location: /home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro/bin/Debug/netcoreapp2.2
+2019-12-26 21:06:56.4265 Debug Auto loading based on AppDomain-BaseDirectory found location: /home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro/bin/Debug/netcoreapp2.2
+2019-12-26 21:06:56.4265 Debug Search for auto loading files in location: /home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro/bin/Debug/netcoreapp2.2
+2019-12-26 21:06:56.4265 Debug Start auto loading, location: /home/yuri-sama/.nuget/packages/nlog/4.6.4/lib/netstandard2.0
+2019-12-26 21:06:56.4322 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-12-26 21:06:56.4322 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-12-26 21:06:56.4329 Debug Auto loading done
+2019-12-26 21:06:56.4329 Info Message Template Auto Format enabled
+2019-12-26 21:06:56.4576 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-12-26 21:06:56.4610 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-12-26 21:06:56.4684 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-12-26 21:06:56.5345 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-12-26 21:06:56.5345 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-12-26 21:06:56.5345 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-12-26 21:06:56.5366 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-12-26 21:06:56.5366 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-12-26 21:06:56.5366 Trace  Scanning Property Culture '' System.Globalization
+2019-12-26 21:06:56.5442 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-12-26 21:06:56.5442 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-12-26 21:06:56.5449 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-12-26 21:06:56.5449 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-12-26 21:06:56.5449 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-12-26 21:06:56.5449 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2019-12-26 21:06:56.5449 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-12-26 21:06:56.5449 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-12-26 21:06:56.5589 Debug Setting 'FileTarget.name' to 'logfile'
+2019-12-26 21:06:56.5589 Debug Setting 'FileTarget.fileName' to 'Utils/logs/${shortdate}_logfile.txt'
+2019-12-26 21:06:56.5589 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-12-26 21:06:56.5589 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-12-26 21:06:56.5617 Debug Setting 'FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2019-12-26 21:06:56.5617 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-12-26 21:06:56.5617 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-12-26 21:06:56.5617 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-12-26 21:06:56.5617 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-12-26 21:06:56.5617 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-12-26 21:06:56.5617 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-12-26 21:06:56.5617 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-12-26 21:06:56.5617 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-12-26 21:06:56.5617 Trace  Scanning Property Culture '' System.Globalization
+2019-12-26 21:06:56.5617 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-12-26 21:06:56.5617 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-12-26 21:06:56.5617 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-12-26 21:06:56.5617 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-12-26 21:06:56.5617 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-12-26 21:06:56.5617 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-12-26 21:06:56.5617 Info Adding target FileTarget(Name=logfile)
+2019-12-26 21:06:56.5656 Debug Registered target logfile: NLog.Targets.FileTarget
+2019-12-26 21:06:56.5656 Trace ParseRulesElement
+2019-12-26 21:06:56.5841 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2019-12-26 21:06:56.5923 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2019-12-26 21:06:56.6059 Debug Watching path '/home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro' filter 'nlog.config' for changes.
+2019-12-26 21:06:56.6059 Debug --- NLog configuration dump ---
+2019-12-26 21:06:56.6059 Debug Targets:
+2019-12-26 21:06:56.6059 Debug File Target[logfile]
+2019-12-26 21:06:56.6059 Debug Rules:
+2019-12-26 21:06:56.6104 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2019-12-26 21:06:56.6104 Debug --- End of NLog configuration dump ---
+2019-12-26 21:06:56.6142 Trace FindReachableObject<System.Object>:
+2019-12-26 21:06:56.6142 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2019-12-26 21:06:56.6142 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2019-12-26 21:06:56.6142 Trace  Scanning FileTarget 'File Target[logfile]'
+2019-12-26 21:06:56.6142 Trace   Scanning Property FileName ''Utils/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-12-26 21:06:56.6142 Trace   Scanning SimpleLayout ''Utils/logs/${shortdate}_logfile.txt''
+2019-12-26 21:06:56.6142 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-12-26 21:06:56.6142 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-12-26 21:06:56.6142 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-12-26 21:06:56.6142 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-12-26 21:06:56.6168 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-12-26 21:06:56.6168 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-12-26 21:06:56.6168 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-12-26 21:06:56.6168 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-12-26 21:06:56.6168 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-12-26 21:06:56.6168 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-12-26 21:06:56.6168 Trace     Scanning Property Culture '' System.Globalization
+2019-12-26 21:06:56.6168 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-12-26 21:06:56.6168 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-12-26 21:06:56.6168 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-12-26 21:06:56.6168 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-12-26 21:06:56.6168 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-12-26 21:06:56.6168 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-12-26 21:06:56.6168 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2019-12-26 21:06:56.6168 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-12-26 21:06:56.6168 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2019-12-26 21:06:56.6168 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2019-12-26 21:06:56.6206 Info Found 14 configuration items
+2019-12-26 21:06:56.6206 Trace Initializing Layout Renderer: ${message}
+2019-12-26 21:06:56.6206 Trace Initializing Layout Renderer: ${literal}
+2019-12-26 21:06:56.6206 Trace Initializing Layout Renderer: ${level}
+2019-12-26 21:06:56.6206 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2019-12-26 21:06:56.6257 Trace FindReachableObject<System.Object>:
+2019-12-26 21:06:56.6257 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-12-26 21:06:56.6257 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-12-26 21:06:56.6257 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-12-26 21:06:56.6294 Trace Initializing Layout Renderer: ${uppercase}
+2019-12-26 21:06:56.6294 Trace Initializing Layout Renderer: ${literal}
+2019-12-26 21:06:56.6294 Trace Initializing Layout Renderer: ${longdate}
+2019-12-26 21:06:56.6294 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2019-12-26 21:06:56.6294 Trace FindReachableObject<System.Object>:
+2019-12-26 21:06:56.6294 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-12-26 21:06:56.6294 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-12-26 21:06:56.6294 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-12-26 21:06:56.6294 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-12-26 21:06:56.6294 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-12-26 21:06:56.6294 Trace   Scanning Property Culture '' System.Globalization
+2019-12-26 21:06:56.6294 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-12-26 21:06:56.6294 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-12-26 21:06:56.6294 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-12-26 21:06:56.6294 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-12-26 21:06:56.6294 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-12-26 21:06:56.6294 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-12-26 21:06:56.6294 Trace Initializing Layout Renderer: ${literal}
+2019-12-26 21:06:56.6294 Trace Initializing Layout Renderer: ${shortdate}
+2019-12-26 21:06:56.6294 Trace Initializing Layout Renderer: ${literal}
+2019-12-26 21:06:56.6294 Trace Initializing 'Utils/logs/${shortdate}_logfile.txt'
+2019-12-26 21:06:56.6294 Trace FindReachableObject<System.Object>:
+2019-12-26 21:06:56.6326 Trace Scanning SimpleLayout ''Utils/logs/${shortdate}_logfile.txt''
+2019-12-26 21:06:56.6326 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-12-26 21:06:56.6326 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-12-26 21:06:56.6326 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-12-26 21:06:56.6326 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-12-26 21:06:56.6326 Trace Initializing File Target[logfile]
+2019-12-26 21:06:56.6381 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-12-26 21:06:56.6381 Trace Scanning FileTarget 'File Target[logfile]'
+2019-12-26 21:06:56.6381 Trace  Scanning Property FileName ''Utils/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2019-12-26 21:06:56.6381 Trace  Scanning SimpleLayout ''Utils/logs/${shortdate}_logfile.txt''
+2019-12-26 21:06:56.6381 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2019-12-26 21:06:56.6381 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2019-12-26 21:06:56.6381 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2019-12-26 21:06:56.6381 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2019-12-26 21:06:56.6381 Trace File Target[logfile] has 2 layouts
+2019-12-26 21:06:56.6409 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2019-12-26 21:07:33.3252 Debug Targets for restauranteCedro.Utils.LoggerManager by level:
+2019-12-26 21:07:33.3252 Debug Trace =>
+2019-12-26 21:07:33.3252 Debug Debug => logfile
+2019-12-26 21:07:33.3252 Debug Info => logfile
+2019-12-26 21:07:33.3252 Debug Warn => logfile
+2019-12-26 21:07:33.3252 Debug Error => logfile
+2019-12-26 21:07:33.3252 Debug Fatal => logfile
+2019-12-26 21:07:33.4087 Debug FileTarget(Name=logfile): Process file '/home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro/bin/Debug/netcoreapp2.2/Utils/logs/2019-12-26_logfile.txt' on startup
+2019-12-26 21:07:33.4242 Debug Creating file appender: /home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro/bin/Debug/netcoreapp2.2/Utils/logs/2019-12-26_logfile.txt
+2019-12-26 21:07:33.4296 Trace Opening /home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro/bin/Debug/netcoreapp2.2/Utils/logs/2019-12-26_logfile.txt with allowFileSharedWriting=False
+2019-12-26 21:13:58.3341 Info AppDomain Shutting down. Logger closing...
+2019-12-26 21:13:58.3422 Debug Stopping file watching for path '/home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro' filter 'nlog.config'
+2019-12-26 21:13:58.3470 Debug Targets not configured for logger: restauranteCedro.Utils.LoggerManager
+2019-12-26 21:13:58.3470 Debug Closing logging configuration...
+2019-12-26 21:13:58.3489 Trace Closing File Target[logfile]
+2019-12-26 21:13:58.3489 Debug Closing target 'File Target[logfile]'.
+2019-12-26 21:13:58.3548 Trace FileTarget(Name=logfile): FinalizeFile '/home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro/bin/Debug/netcoreapp2.2/Utils/logs/2019-12-26_logfile.txt, isArchiving: False'
+2019-12-26 21:13:58.3624 Debug FileAppender Closing Invalidate - /home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro/bin/Debug/netcoreapp2.2/Utils/logs/2019-12-26_logfile.txt
+2019-12-26 21:13:58.3664 Debug Closed target 'File Target[logfile]'.
+2019-12-26 21:13:58.3664 Trace Closing 'Utils/logs/${shortdate}_logfile.txt'
+2019-12-26 21:13:58.3664 Trace Closing Layout Renderer: ${literal}
+2019-12-26 21:13:58.3664 Trace Closing Layout Renderer: ${shortdate}
+2019-12-26 21:13:58.3664 Trace Closing Layout Renderer: ${literal}
+2019-12-26 21:13:58.3664 Trace Closing '${longdate} ${level:uppercase=true} ${message}'
+2019-12-26 21:13:58.3664 Trace Closing Layout Renderer: ${longdate}
+2019-12-26 21:13:58.3664 Trace Closing Layout Renderer: ${literal}
+2019-12-26 21:13:58.3664 Trace Closing Layout Renderer: ${uppercase}
+2019-12-26 21:13:58.3664 Trace Closing SimpleLayout=Layout Renderer: ${level}
+2019-12-26 21:13:58.3664 Trace Closing Layout Renderer: ${level}
+2019-12-26 21:13:58.3664 Trace Closing Layout Renderer: ${literal}
+2019-12-26 21:13:58.3686 Trace Closing Layout Renderer: ${message}
+2019-12-26 21:13:58.3686 Debug Finished closing logging configuration.
+2019-12-26 21:13:58.3686 Info Logger has been shut down.
