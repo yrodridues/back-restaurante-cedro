@@ -5,14 +5,12 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Text;
 using AutoMapper;
-
 using restauranteCedro.BLL;
 using restauranteCedro.DAL;
 using restauranteCedro.DAL.DAO;
 using restauranteCedro.Extensions;
 using restauranteCedro.Extensions.Filters;
 using restauranteCedro.Utils;
-
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -33,8 +31,17 @@ namespace restauranteCedro
 {
     public class Startup
     {
+        private readonly MapperConfiguration _mapperConfiguration;
         public Startup(IConfiguration configuration)
         {
+            LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
+
+            //AUTOMAPPER PARA MAPEAR DTO E MODEL
+            _mapperConfiguration = new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile(new AutoMapperProfileConfiguration());
+            });
+
             Configuration = configuration;
         }
 
@@ -43,19 +50,13 @@ namespace restauranteCedro
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<CookiePolicyOptions>(options =>
+            services.AddMvc(options => 
             {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
-
-
-            services.AddMvc();
+                options.Filters.Add(new ApiValidationFilterAttribute());
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddDbContext<RestauranteContext>(options =>
                options.UseNpgsql(Configuration.GetConnectionString("conexaoPostgreSQL")));
-
 
             //JWT
             services.AddAuthentication(o =>
@@ -95,17 +96,17 @@ namespace restauranteCedro
                     });
             });
 
-            /* //Log
+            //Log
             services.AddSingleton<ILoggerManager, LoggerManager>();
             
             //AUTOMAPPER
             services.AddSingleton(sp => _mapperConfiguration.CreateMapper());
 
             //DI
-            services.AddTransient<ITesteDAO, TesteDAO>();
-            services.AddTransient<ITesteBLL, TesteBLL>();
+            services.AddTransient<IRestauranteDAO, RestauranteDAO>();
+            services.AddTransient<IRestauranteBLL, RestauranteBLL>();
 
-            services.AddScoped<SeedingService>(); */
+            services.AddScoped<SeedingService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -136,7 +137,7 @@ namespace restauranteCedro
             });
 
             //Middleware
-            //app.ConfigureCustomExceptionMiddleware();
+            app.ConfigureCustomExceptionMiddleware();
 
             app.UseHttpsRedirection();
             app.UseMvc();
