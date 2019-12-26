@@ -106,6 +106,9 @@ namespace restauranteCedro
             services.AddTransient<IRestauranteDAO, RestauranteDAO>();
             services.AddTransient<IRestauranteBLL, RestauranteBLL>();
 
+            services.AddTransient<IPratoDAO, PratoDAO>();
+            services.AddTransient<IPratoBLL, PratoBLL>();
+
             services.AddScoped<SeedingService>();
         }
 

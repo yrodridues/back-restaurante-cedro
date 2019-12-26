@@ -22,6 +22,7 @@ namespace restauranteCedro.DAL.DAO
                 return; //DB has been seeded
             }
 
+            //Add Restaurante
             Restaurante restaurante1 = new Restaurante();
             restaurante1.NomeRestaurante = "Dona Chica";
 
@@ -29,6 +30,18 @@ namespace restauranteCedro.DAL.DAO
             restaurantes.Add(restaurante1);
 
             _context.Restaurantes.AddRange(restaurantes);
+            _context.SaveChanges();
+
+            //Add Prato
+            Prato prato1 = new Prato();
+            prato1.IdRestaurante = 1;
+            prato1.NomePrato = "Paella Mineira";
+            prato1.PrecoPrato = 20;
+
+            List<Prato> pratos = new List<Prato>();
+            pratos.Add(prato1);
+
+            _context.Pratos.AddRange(pratos);
             _context.SaveChanges();
         }
     }
