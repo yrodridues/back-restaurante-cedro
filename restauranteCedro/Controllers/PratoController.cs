@@ -30,7 +30,7 @@ namespace restauranteCedro.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet]
+        [HttpGet("GetAll")]
         public ActionResult<List<PratoDTO>> Get()
         {
             var model = _pratoBll.GetAll();
@@ -49,7 +49,7 @@ namespace restauranteCedro.Controllers
             return Ok(new ApiOkResponse(listaPratos));
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("GetId/{id}")]
         public ActionResult<PratoDTO> Get(int id)
         {
             var model = _pratoBll.GetPrato(id);
@@ -62,7 +62,7 @@ namespace restauranteCedro.Controllers
             return Ok(new ApiOkResponse(_mapper.Map<PratoDTO>(model)));
         }
 
-        [HttpPost]
+        [HttpPost("Create")]
         public IActionResult Create([FromBody]PratoDTO Prato)
         {
             _pratoBll.Inserir(_mapper.Map<Prato>(Prato));
@@ -70,7 +70,7 @@ namespace restauranteCedro.Controllers
             return Ok(new ApiResponse(200, "Inserido com sucesso."));
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete/{id}")]
         public IActionResult Delete(int id)
         {
             _pratoBll.Remove(id);
@@ -78,7 +78,7 @@ namespace restauranteCedro.Controllers
             return Ok(new ApiResponse(200, $"Prato com o Id->{id} removido com sucesso."));
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("Update/{id}")]
         public IActionResult Update(int id, [FromBody] PratoDTO Prato)
         {
             _pratoBll.Update(_mapper.Map<Prato>(Prato));
