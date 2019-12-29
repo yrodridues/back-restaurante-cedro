@@ -15,6 +15,7 @@ namespace restauranteCedro.BLL
             _restauranteDAO = restauranteDAO;
         }
 
+        //REGRA DE NEGOCIO PARA OBTENCAO DE TODOS RESTAURANTES
         public List<Restaurante> GetAll()
         {
             var listaRestaurantes = _restauranteDAO.GetAll();
@@ -22,18 +23,21 @@ namespace restauranteCedro.BLL
             return listaRestaurantes;
         }
 
+        //REGRA DE NEGOCIO PARA OBTENCAO DE RESTAURANTE POR ID
         public Restaurante GetRestaurante(int id)
         {
             var restaurante = _restauranteDAO.GetRestaurante(id);
 
             return restaurante;
         }
-
+        
+        //REGRA DE NEGOCIO PARA INSERCAO DE UM NOVO RESTAURANTE
         public void Inserir(Restaurante restaurante)
         {
             _restauranteDAO.Inserir(restaurante);
         }
 
+        //REGRA DE NEGOCIO PARA REMOCAO DE UM RESTAURANTE
         public void Remove(int id)
         {
             var obj = _restauranteDAO.GetRestaurante(id);
@@ -53,6 +57,7 @@ namespace restauranteCedro.BLL
             }
         }
 
+        //REGRA DE NEGOCIO PARA A UTUALIZACAO DOS DADOS DE UM RESTAURANTE
         public void Update(Restaurante novoRestaurante)
         {
             var objAtual = _restauranteDAO.GetRestaurante(novoRestaurante.IdRestaurante);

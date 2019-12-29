@@ -45,18 +45,7 @@ namespace restauranteCedro.Controllers
             {
                 listaRestaurantes.Add(_mapper.Map<RestauranteDTO>(item));
             }
-
-            /*List<RestauranteDTO> listaT = new List<RestauranteDTO>();
-            for (int i = 0; i < 20; i++)
-            {
-                RestauranteDTO restau = new RestauranteDTO
-                {
-                    IdRestaurante = 1,
-                    NomeRestaurante = "Dona Chica"
-                };
-                listaT.Add(restau);
-            }
-            return listaT;*/
+            
             return Ok(new ApiOkResponse(listaRestaurantes));
         }
 

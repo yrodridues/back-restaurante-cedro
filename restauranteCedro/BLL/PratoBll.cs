@@ -15,23 +15,27 @@ namespace restauranteCedro.BLL
             _pratoDAO = pratoDAO;
         }
 
+        //REGRA DE NEGOCIO PARA A OBTENCAO DE TODOS OS PRATOS
         public List<Prato> GetAll()
         {
             var listaPratos = _pratoDAO.GetAll();
             return listaPratos;
         }
 
+        //REGRA DE NEGOCIO PARA A OBTENCAO DE UM PRATO POR ID
         public Prato GetPrato(int id)
         {
             var prato = _pratoDAO.GetPrato(id);
             return prato;
         }
 
+        //REGRA DE NEGOCIO PARA INSERCAO DE UM NOVO PRATO
         public void Inserir(Prato prato)
         {
             _pratoDAO.Inserir(prato);
         }
 
+        //REGRA DE NEGOCIO PARA REMOCAO DE UM PRATO
         public void Remove(int id)
         {
              var obj = _pratoDAO.GetPrato(id);
@@ -51,6 +55,7 @@ namespace restauranteCedro.BLL
             }
         }
 
+        //REGRA DE NEGOCIO PARA A ATUALIZACAO DOS DADOS DE UM PRATO
         public void Update(Prato novoPrato)
         {
             var objAtual = _pratoDAO.GetPrato(novoPrato.IdPrato);
