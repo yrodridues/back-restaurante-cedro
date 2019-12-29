@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "9aa8e642fe4b9a5a9c59f4d6d79d1720e5de3575"
+    "signature": ""
   },
   "compilationOptions": {
     "defines": [
@@ -10,7 +10,7 @@
       "NETCOREAPP",
       "NETCOREAPP2_2"
     ],
-    "languageVersion": "",
+    "languageVersion": "7.3",
     "platform": "",
     "allowUnsafe": false,
     "warningsAsErrors": false,
@@ -25,6 +25,7 @@
       "restauranteCedro/1.0.0": {
         "dependencies": {
           "AutoMapper": "8.1.1",
+          "EntityFramework6.Npgsql": "6.4.0",
           "Microsoft.AspNetCore.All": "2.2.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
@@ -56,6 +57,17 @@
         },
         "compile": {
           "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
+      "EntityFramework6.Npgsql/6.4.0": {
+        "runtime": {
+          "lib/net461/EntityFramework6.Npgsql.dll": {
+            "assemblyVersion": "6.4.0.0",
+            "fileVersion": "6.4.0.0"
+          }
+        },
+        "compile": {
+          "lib/net461/EntityFramework6.Npgsql.dll": {}
         }
       },
       "Microsoft.AspNetCore.App/2.2.0": {
@@ -745,7 +757,7 @@
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "assemblyVersion": "4.0.4.1",
-            "fileVersion": "4.0.0.0"
+            "fileVersion": "4.6.26919.2"
           }
         },
         "compile": {
@@ -4426,6 +4438,13 @@
       "path": "automapper/8.1.1",
       "hashPath": "automapper.8.1.1.nupkg.sha512"
     },
+    "EntityFramework6.Npgsql/6.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NQ1GFNlntnBOUURb4wjRZ2kw744BZwZRAv9jaoaZU+NZlGDwQvoFH+aGXLfjnU/Mh55KL0LUTHH3rJA3dhcfug==",
+      "path": "entityframework6.npgsql/6.4.0",
+      "hashPath": "entityframework6.npgsql.6.4.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.App/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -6137,7 +6156,7 @@
     "runtime.native.System.Net.Http/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-guqHgQOK2eUgtJae2VKjNawBn1xjC0hfOt5wASHa60XHbIdCsQlqtvMsFG+3hy7yp88V+gi9fZCjubuDkeakcQ==",
+      "sha512": "sha512-ZVuZJqnnegJhd2k/PtAbbIcZ3aZeITq3sj06oKfMBSfphW3HDmk/t4ObvbOk/JA/swGR0LNqMksAh/f7gpTROg==",
       "path": "runtime.native.system.net.http/4.3.0",
       "hashPath": "runtime.native.system.net.http.4.3.0.nupkg.sha512"
     },
@@ -6179,7 +6198,7 @@
     "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Kh9W4agE0r/hK8AX1LvyQI2NrKHBL8pO0gRoDTdDb0LL6Ta1Z2OtFx3lOaAE0ZpCUc/dt9Wzs3rA7a3IsKdOVA==",
+      "sha512": "sha512-kVXCuMTrTlxq4XOOMAysuNwsXWpYeboGddNGpIgNSZmv1b6r/s/DPk0fYMB7Q5Qo4bY68o48jt4T4y5BVecbCQ==",
       "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple/4.3.0",
       "hashPath": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple.4.3.0.nupkg.sha512"
     },
@@ -6326,7 +6345,7 @@
     "System.Collections.Specialized/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NoPBj0ykejqAWW4p4gGtrrL+3c84ZLSvGnHgq422ew1Rj4WKj1FA8/BCybqC111EtgcqUl6ZJNFYYS22HLgbjA==",
+      "sha512": "sha512-Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
       "path": "system.collections.specialized/4.3.0",
       "hashPath": "system.collections.specialized.4.3.0.nupkg.sha512"
     },

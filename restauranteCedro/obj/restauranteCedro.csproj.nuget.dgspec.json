@@ -1,28 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro/restauranteCedro.csproj": {}
+    "C:\\Users\\Pichau\\Desktop\\cedro\\back-restaurante-cedro-develop\\restauranteCedro\\restauranteCedro.csproj": {}
   },
   "projects": {
-    "/home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro/restauranteCedro.csproj": {
+    "C:\\Users\\Pichau\\Desktop\\cedro\\back-restaurante-cedro-develop\\restauranteCedro\\restauranteCedro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro/restauranteCedro.csproj",
+        "projectUniqueName": "C:\\Users\\Pichau\\Desktop\\cedro\\back-restaurante-cedro-develop\\restauranteCedro\\restauranteCedro.csproj",
         "projectName": "restauranteCedro",
-        "projectPath": "/home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro/restauranteCedro.csproj",
-        "packagesPath": "/home/yuri-sama/.nuget/packages/",
-        "outputPath": "/home/yuri-sama/Documentos/Cedro/back-restaurante-cedro/restauranteCedro/obj/",
+        "projectPath": "C:\\Users\\Pichau\\Desktop\\cedro\\back-restaurante-cedro-develop\\restauranteCedro\\restauranteCedro.csproj",
+        "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pichau\\Desktop\\cedro\\back-restaurante-cedro-develop\\restauranteCedro\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/home/yuri-sama/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,6 +44,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[8.1.1, )"
+            },
+            "EntityFramework6.Npgsql": {
+              "target": "Package",
+              "version": "[6.4.0, )"
             },
             "Microsoft.AspNetCore.All": {
               "suppressParent": "All",
@@ -91,10 +97,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

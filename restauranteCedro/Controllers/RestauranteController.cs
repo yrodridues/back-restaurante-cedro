@@ -31,7 +31,7 @@ namespace restauranteCedro.Controllers
         }
 
         [HttpGet("GetAll")]
-        public ActionResult<List<RestauranteDTO>> Get()
+        public ActionResult<List<RestauranteDTO>> GetAll()
         {
             var model = _restauranteBll.GetAll();
             if (model == null)
@@ -46,11 +46,22 @@ namespace restauranteCedro.Controllers
                 listaRestaurantes.Add(_mapper.Map<RestauranteDTO>(item));
             }
 
+            /*List<RestauranteDTO> listaT = new List<RestauranteDTO>();
+            for (int i = 0; i < 20; i++)
+            {
+                RestauranteDTO restau = new RestauranteDTO
+                {
+                    IdRestaurante = 1,
+                    NomeRestaurante = "Dona Chica"
+                };
+                listaT.Add(restau);
+            }
+            return listaT;*/
             return Ok(new ApiOkResponse(listaRestaurantes));
         }
 
-        [HttpGet("GetId{id}")]
-        public ActionResult<RestauranteDTO> Get(int id)
+        [HttpGet("GetId/{id}")]
+        public ActionResult<RestauranteDTO> GetId(int id)
         {
             var model = _restauranteBll.GetRestaurante(id);
 

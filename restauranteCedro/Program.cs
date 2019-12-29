@@ -20,6 +20,6 @@ namespace restauranteCedro
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .UseUrls("http://0.0.0.0:4100");
+                .UseUrls("http://0.0.0.0:5000");
     }
 }

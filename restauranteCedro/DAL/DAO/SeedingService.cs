@@ -24,7 +24,7 @@ namespace restauranteCedro.DAL.DAO
 
             //Add Restaurante
             Restaurante restaurante1 = new Restaurante();
-            restaurante1.NomeRestaurante = "Dona Chica";
+            restaurante1.NomeRestaurante = "D";
 
             List<Restaurante> restaurantes = new List<Restaurante>();
             restaurantes.Add(restaurante1);

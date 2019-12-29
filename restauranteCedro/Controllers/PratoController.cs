@@ -31,7 +31,7 @@ namespace restauranteCedro.Controllers
         }
 
         [HttpGet("GetAll")]
-        public ActionResult<List<PratoDTO>> Get()
+        public ActionResult<List<PratoDTO>> GetAll()
         {
             var model = _pratoBll.GetAll();
             if (model == null)
@@ -46,11 +46,22 @@ namespace restauranteCedro.Controllers
                 listaPratos.Add(_mapper.Map<PratoDTO>(item));
             }
 
+            /*List<PratoDTO> listaT = new List<PratoDTO>();
+            PratoDTO prat = new PratoDTO
+            {
+                IdPrato = 1,
+                NomePrato = "ricota",
+                PrecoPrato = 20,
+                IdRestaurante = 1
+            };
+            listaT.Add(prat);
+            return listaT;*/
+
             return Ok(new ApiOkResponse(listaPratos));
         }
 
         [HttpGet("GetId/{id}")]
-        public ActionResult<PratoDTO> Get(int id)
+        public ActionResult<PratoDTO> GetId(int id)
         {
             var model = _pratoBll.GetPrato(id);
 
