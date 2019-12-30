@@ -6,9 +6,14 @@ Foram utilizadas as tecnologias: C# (para o back), Vue (para o front), e o banco
 
 **Codigo Back-End:**
 * digite os comandos: 
-> 1. dotnet restore
-> 2. dotnet build
-> 3. dotnet run
+
+```shell
+$ dotnet restore
+----------------
+$ dotnet build
+----------------
+$ dotnet run
+```
 * quando o programa rodar, abra o navegador, e acesse o link: "http://localhost:5000/swagger/index.html"
 
 # Importante: 
