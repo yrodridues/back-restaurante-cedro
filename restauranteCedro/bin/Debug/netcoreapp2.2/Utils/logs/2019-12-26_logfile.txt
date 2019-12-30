@@ -1,0 +1,2 @@
+2019-12-26 19:06:35.2289 ERROR Erro: 28P01: password authentication failed for user "rest"
+2019-12-26 21:07:33.3355 ERROR Erro: 28P01: password authentication failed for user "rest"

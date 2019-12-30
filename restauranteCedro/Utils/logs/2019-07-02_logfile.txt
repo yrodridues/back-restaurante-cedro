@@ -1,0 +1,5 @@
+2019-07-02 11:16:42.1684 ERROR Erro: Object reference not set to an instance of an object.
+2019-07-02 11:32:17.8179 ERROR Erro: Object reference not set to an instance of an object.
+2019-07-02 11:34:30.4099 ERROR Erro: The instance of entity type 'Teste' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2019-07-02 11:35:19.3380 ERROR Erro: The instance of entity type 'Teste' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2019-07-02 11:42:24.8740 ERROR Erro: Id não encontrado.

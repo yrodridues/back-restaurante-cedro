@@ -1,0 +1,8 @@
+2019-12-28 12:56:25.1715 ERROR Erro: 28P01: password authentication failed for user "rest"
+2019-12-28 13:17:42.5934 ERROR Erro: 28P01: password authentication failed for user "rest"
+2019-12-28 16:04:12.7060 ERROR Erro: 42P01: relation "Prato" does not exist
+2019-12-28 16:06:32.3416 ERROR Erro: 42P01: relation "Prato" does not exist
+2019-12-28 16:07:19.5781 ERROR Erro: 42P01: relation "Prato" does not exist
+2019-12-28 18:01:06.4346 ERROR Erro: 42703: column p.IdPrato does not exist
+2019-12-28 23:00:00.5067 ERROR Erro: An error occurred while updating the entries. See the inner exception for details.
+2019-12-28 23:27:10.3773 ERROR Erro: Id não encontrado.
